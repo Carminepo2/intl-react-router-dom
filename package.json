@@ -1,11 +1,13 @@
 {
   "name": "intl-react-router-dom",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "",
   "scripts": {
     "lint": "tsc",
     "build": "vite build",
     "test": "vitest run",
-    "ci": "npm run test && npm run lint && npm run build"
+    "ci": "npm run test && npm run lint && npm run build",
+    "release": "npm run ci && changeset publish"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -13,6 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@changesets/cli": "^2.26.0",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
