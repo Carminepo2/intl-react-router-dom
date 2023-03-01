@@ -1,0 +1,43 @@
+{
+  "name": "intl-react-router-dom",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "tsc",
+    "build": "vite build",
+    "test": "vitest run",
+    "ci": "npm run test && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@types/node": "^18.14.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.0.2",
+    "vitest": "^0.29.2"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/intl-react-router-dom.umd.js",
+  "module": "./dist/intl-react-router-dom.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/intl-react-router-dom.es.js",
+      "require": "./dist/intl-react-router-dom.umd.js"
+    }
+  }
+}
